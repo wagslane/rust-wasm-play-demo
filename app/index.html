@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Rust WASM Playground</title>
+    <script src="/app/rs_client.js"></script>
+</head>
+
+<body>
+    <div class="outer">
+        <textarea id="code" class="col-item" rows="20" cols="100">
+fn main() {
+    println!("Hello, world!");
+}
+    </textarea>
+        <button id="runbtn" class="col-item" onclick="clickRun()">
+            Run
+        </button>
+        <div class="col-item" id="output">
+        </div>
+    </div>
+
+    <style>
+        .outer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #runbtn {
+            padding: 1em 2em 1em 2em;
+            cursor: pointer;
+        }
+
+        #output {
+            max-width: 800px;
+            padding: 1em;
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        .col-item {
+            margin: 1em;
+        }
+
+    </style>
+</body>
+
+</html>
