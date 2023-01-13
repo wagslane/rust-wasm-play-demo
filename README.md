@@ -1,5 +1,7 @@
 # rust-wasm-play-demo
 
+This is a repo with some *bare banes* to show the proof of concept for a WASM Rust playground. There is a more feature complete live version on [Boot.dev here](https://boot.dev/playground/rs).
+
 ## Dependencies
 
 * rustup
